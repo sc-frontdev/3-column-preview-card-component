@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca&display=swap');
+
+
+:root {
+
+
+    --BrightOrange: hsl(31, 77%, 52%);
+    --DarkCyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+    --TransparentWhite: hsla(0, 0%, 100%, 0.75);
+    --VeryLightGray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 2em;
+    background-color: var(--VeryLightGray);
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: 'Big Shoulders Display';
+    color: var(--TransparentWhite);
+}
+
+p {
+    color: var(--VeryLightGray);
+    text-wrap: balance;
+}
+main{
+    margin: 0 auto;
+    padding:1em ;
+}
+
+.Container {
+    max-width: 1440px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 400px;
+    max-width:300px;
+    padding: 1.5em;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;            
+}
+
+img {
+    max-width: 64px;
+    max-height: 44px;
+}
+
+.sedans {
+    background-color: var(--BrightOrange);
+    border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+    background-color: var(--DarkCyan);
+}
+
+.luxury {
+    background-color: var(--VeryDarkCyan);
+    border-radius: 0 10px 10px 0;
+}
+
+.btn-1 {
+    color: var(--BrightOrange);
+}
+
+.btn-2 {
+    color: var(--DarkCyan);
+}
+
+.btn-3 {
+    color: var(--VeryDarkCyan);
+}
+
+button {
+    display:block;
+    font-weight: bold;
+    width: 10em;
+    padding: .5em;
+    justify-content:center;
+    margin-top: 2em;
+    background-color: var(--VeryLightGray);
+    border: 1px solid var(--VeryLightGray);
+    border-radius: 30px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: transparent;
+        color: var(--VeryLightGray);
+        transition: all .5s;
+        cursor: pointer;
+}
+
+
+}
+@media (width < 690px){
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sedans {
+    border-radius: 10px 10px 0 0;
+}
+
+
+.luxury {
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+}
